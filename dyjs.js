@@ -1,10 +1,7 @@
 /*
-目标: 抖音极速版App 抓包https://api5-normal-lf.toutiaoapi.com域名url里的device_id iid 请求头cookie里的sessionid用＆连接 不分顺序
+5.13测试可用 没有金币自行换参数
 
-格式：export dyjsb="sessionid=xxxx&device_id=xxxxx&iid=xxxx"  
-多账号换行隔开
-
-cron 32 0/30 * * ?
+格式：export dyjsb="sessionid=xxxx;deviceid=xxxxx;iid=xxxx"  多账号配置文件换行隔开或者环境变量一条一个，多账号请脚本加conc并发
 
 */
 
@@ -234,7 +231,7 @@ function Env(name,env) {
                 }
             };
             this.isMute || (this.isSurge() || this.isLoon() ? $notification.post(e, s, i, o(r)) : this.isQuanX() && $notify(e, s, i, o(r)));
-            let h = ["", "============== 小辉版|系统通知 =============="];
+            let h = ["", "============== 系统通知 =============="];
             h.push(e),
             s && h.push(s),
             i && h.push(i),
