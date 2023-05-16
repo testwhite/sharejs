@@ -1,5 +1,5 @@
 /*
-环境变量dyjsb
+环境变量dyjsb1
 
 只需要sessionid的值
 
@@ -11,7 +11,7 @@ let defaultUA = "";
 let httpResult,
   httpReq,
   httpResp,
-  userCookie =($.isNode() ? process.env.dyjsb : $.getdata("dyjsb")) ||``,
+  userCookie =($.isNode() ? process.env.dyjsb1 : $.getdata("dyjsb1")) ||``,
   userList = [],
   userIdx = 0,
   userCount = 0;
